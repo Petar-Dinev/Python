@@ -1,2 +1,2 @@
 # Python
-All my python coures-from SoftUni university
+All my python courses-from SoftUni university
