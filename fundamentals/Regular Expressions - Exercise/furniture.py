@@ -2,7 +2,7 @@ import re
 
 bought_furniture = []
 total_cost = 0
-pattern = r'>>([A-Za-z]+)<<(\d+.?\d+)!(\d+)'
+pattern = r'>>([A-Za-z]+)<<(\d+\.?\d*)!(\d+)'
 line = input()
 
 while line != 'Purchase':
@@ -15,5 +15,6 @@ while line != 'Purchase':
     line = input()
 
 print("Bought furniture:")
-print('\n'.join(bought_furniture))
+for furniture in bought_furniture:
+    print(furniture)
 print(f"Total money spend: {total_cost:.2f}")
